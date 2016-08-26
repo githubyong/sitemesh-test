@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sitemesh>
+
+	<mapping decorator="/layout/main" path="/*" />
+	<mapping exclude="true" decorator="/layout/main" path="/ajax/*" />
+	<!--<mapping exclude="true" decorator="/layout/main" path="/pages/examples/lockscreen" />-->
+	<!--<mapping exclude="true" decorator="/layout/main" path="/pages/examples/login" />-->
+	<mapping exclude="true"  path="/login" />
+
+</sitemesh>

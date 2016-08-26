@@ -1,0 +1,33 @@
+/*标题*/
+.console-title {
+    padding: 16px 0px 0 4px;
+    min-height: 36px;
+    border: none;
+}
+
+.console-title-border {
+    border-bottom: 1px solid #DDD;
+}
+
+.pull-left {
+    float: left !important;
+    padding-left: 2px;
+    font-size: 14px;
+    border-left: 2px solid #53C7A0
+}
+
+.pull-right {
+    float: right !important;
+}
+
+/*查询条件*/
+.hd {
+
+}
+
+/* 错误提示 */
+.err {
+    font-size: 12px;
+    font-family: '微软雅黑';
+    color: #e68900;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    text-align: left;
+    margin: auto;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+.layout-split-west{
+    border: none;
+    min-height: 100%;
+}
+
+
+
+

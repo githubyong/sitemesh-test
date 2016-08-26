@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Layout - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css"
+          href="../../static/jquery-easyui-1.5/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../static/jquery-easyui-1.5/themes/icon.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../static/css/reset.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../static/css/menu.css">
+    <script type="text/javascript"
+            src="../../static/jquery-easyui-1.5/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="../../static/jquery-easyui-1.5/jquery.easyui.min.js"></script>
+    <style type="text/css">
+        #northPanel {
+            background: #53C7A0;
+            height: 60px;
+            vertical-align: middle;
+        }
+
+        .top-bar-left {
+            margin-left: 20px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+<div id="mainLayout" class="easyui-layout hidden" data-options="fit: true">
+    <div id="northPanel" data-options="region: 'north', border: false">
+        <div id="topbar" class="top-bar">
+            <div class="top-bar-left" style="display: inline-block">
+                <img src="../../static/images/logo-1.png" alt="logo1" width="58" height="51"
+                     style="vertical-align: middle"/>
+                <img src="../../static/images/logo-2.png" alt="logo2" width="58" height="51"
+                     style="vertical-align: middle"/>
+            </div>
+        </div>
+
+    </div>
+
+    <div data-options="region: 'west', split: true, minWidth: 200, maxWidth: 400"
+         class="main-sidebar">
+        <div class="easyui-accordion" data-options="multiple:true, border: false">
+            <div title="设备管理" data-options="iconCls:'icon-ok'">
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">设备查询</a><br>
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">新增设备</a>
+            </div>
+            <div title="设备数据" data-options="selected:true">
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true" href="#">监测数据</a>
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">运行参数</a>
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">设备命令</a>
+            </div>
+            <div title="设备控制">
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">短信命令</a>
+                <a class="easyui-linkbutton menu-link-btn" data-options="plain:true">下发记录</a>
+            </div>
+        </div>
+    </div>
+
+    <div data-options="region: 'center'">
+
+        <div class="easyui-layout" data-options="fit: true">
+            <div data-options="region: 'north', split: false, border: false" style="height: 33px;">
+                <div class="console-title console-title-border clearfix" data-ng-show="serviceStatus">
+                    <div class="pull-left"><h5 bo-text="'oss.bucket.console.title' | translate">概览</h5></div>
+                    <div class="pull-right"><a href="https://promotion.aliyun.com/ntms/ossedu2.html"
+                                               ng-href="https://promotion.aliyun.com/ntms/ossedu2.html"
+                                               class="btn btn-default" target="_blank"
+                                               bo-text="'oss.bucket.info.newer_help' | translate"
+                                               aliyun-console-spm="12"
+                                               data-spm-click="gostr=/aliyun;locaid=d12;;">新手帮助</a></div>
+                </div>
+            </div>
+            <div data-options="region: 'center', border: false" style="overflow: hidden;">
+                <sitemesh:write property='body'/>
+            </div>
+        </div>
+    </div>
+
+    <div data-options="region: 'south', collapsed: false, border: false"
+         style="height: 40px;" class="main-footer">
+        <div style="color: #4e5766; padding: 6px 0px 0px 0px; margin: 0px auto; text-align: center; font-size:12px; font-family:微软雅黑;">
+            Copyright © NEC中国研究院
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
